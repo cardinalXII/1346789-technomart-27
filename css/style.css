@@ -1,0 +1,223 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: black;
+	text-transform: none;
+	
+	background-color: white;
+	background-image:url("img/content/main_bg.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.visually-hidden{
+	display: hidden;
+} 
+/* ---------------------------фон для хедера-----------------*/
+.top-menu{
+  background-color:#293449;
+}
+.middle-navigation{
+	background-color:#f3f6f8;
+	background-position: top center;
+	background-repeat: no-repeat;
+	color: #32425c;
+ }
+
+/* -------------------------форматирование хедера-------------- */
+.top-navigation,
+.top-navigation a,
+.top-menu a{
+	font-size: 16px;
+	line-height: 18px;
+	color: #e0e1e3;
+
+}
+.top-navigation:hover,
+.top-navigation a:hover,
+.top-navigation svg path:hover,
+.top-menu a :hover,
+.site-navigation a:hover{
+	color: #ffffff;
+	background-color:#293449;
+	fill: #ffffff;
+}
+
+.top-navigation:focus,
+.top-navigation a:focus,
+.top-navigation svg path:focus,
+.top-menu a:focus,
+.site-navigation a:focus{
+	color:#babbbd;
+	background-color:#161d29;
+	fill: #babbbd;
+}
+.pagename{
+	font-style: italic;
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+ }
+.telefon a{
+	color: #ee3643;
+ }
+.user-menu a{
+	color: #000000;
+	font-size: 21px;
+	line-height: 21px; 
+ }
+ .user-menu a:hover{
+	color: #ee3643;
+ }
+ .user-menu a:focus{
+	color:#babbbd;
+ }
+.main-navigation{
+	position: absolute;
+	width: 940px;
+	height: 64px;
+	background-color: #32425c;
+}
+.site-navigation,
+.site-navigation a{
+	font-size: 17px;
+	line-height: 17px;
+	color: #e0e1e3;	
+} 
+.site-navigation{
+	list-style: none;
+}
+/* ------------------форматирование контента------------ */
+.main-item h2{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.main-item a{
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #e5e5e5;
+	text-transform: uppercase;
+}
+.main-item a:hover{
+	background-color: #cccccc;
+  
+}
+.main-item a:focus{
+	background-color: #b2b2b2;
+}
+.box-material{
+	width: 300px;
+	height: 123px;
+	background-color:#ffbf47;
+}
+.box-instrument{
+	width: 300px;
+	height: 123px;
+	background-color: #3bbce3;
+}
+.box-tech{
+	width: 300px;
+	height: 123px;
+	background-color: #dc91d8;
+}
+.box-discont{
+	width: 300px;
+	height: 123px;
+	background-color: #8ed78f;
+}
+.box-delivery{
+	width: 300px;
+	height: 123px;
+	background-color: #ffc047;
+}
+/*------------------------------слайдер-------------------------*/
+.slider h1{
+	font-size: 31px;
+	line-height: 31px;
+	font-weight: bold;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.slider h3{
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+}
+.slider a{
+	width: 195px;
+	height: 38px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ee3643;
+	text-transform: uppercase;
+}
+.slider a:hover{
+	background-color: #ca2c37;
+}
+.slider a:focus{
+	background-color:#ba2732;
+}
+/*------------------------------------------Список популярных товаров---------------------------------------------*/
+.popitems-header{
+	background-color:#f9f5f0;
+}
+.popitems-header h1{
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #32425c;
+	text-transform: uppercase;
+}
+.popitems-header a{
+	width: 253px;
+	height: 38px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ee3643;
+	text-transform: uppercase;
+}
+.popitems-header a:hover{
+	background-color: #ca2c37;
+}
+.popitems-header a:focus{
+	background-color:#ba2732;
+}
+.popitems li{
+	list-style: none;
+	width: 220px;
+	height: 318px;
+}
+.popitems h1{
+	width: 191px;
+	height: 66px;
+	font-family: "PT Sans";
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+}
+.deleted{
+	text-decoration:line-through;
+
+}
+.price{
+	background-image: url("./img/svg/red-button.svg");
+}
