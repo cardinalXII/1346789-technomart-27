@@ -1109,30 +1109,31 @@ a.logo-footer{
 	margin-right:40px;
 	text-align: center
 }
+
 .down-footer{
 	background-color: #293449;
 	margin: 0;
+	padding: 0;
+}
+.down-footer-holder{
+	width: 960px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	
+}
+.copyright{
+	width: 235px;
+	
+	padding: 0px;
+	margin-right: 160px;
 }
 
-
-
-.chcolor a,
-.footerdowntext a.chcolor{
-	color:#ffd180;
-}
-.footerdowntext,
-.footerdowntext a,
-.footerdowntext p{
-	font-size: 16px;
-	line-height: 18px;
-	color: #ffffff;	
-}
-.footerdowntext a:hover{
-	text-decoration:underline;
-}
-.footerdowntext a:focus{
-	text-decoration:none;
-	color: #ee3643;
+.icons-holder{	
+	display: flex;
+	justify-content: space-between;
+	width: 135px;
+	margin-right: 32px;
+	
 }
 li.icons{
   position: relative;
@@ -1156,6 +1157,34 @@ li.icons:focus{
   display: inline-block;
   width: 25px;
   height: 25px;
+}
+
+.down-contact{
+	display: flex;
+}
+.chcolor a,
+.footerdowntext a.chcolor{
+	color:#ffd180;
+}
+.footerdowntext,
+.footerdowntext a,
+.footerdowntext p{
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;	
+	margin: 0px;
+	padding: 0px;
+}
+.margin-footer-contact{
+	margin-left: 50px;
+}
+
+.footerdowntext a:hover{
+	text-decoration:underline;
+}
+.footerdowntext a:focus{
+	text-decoration:none;
+	color: #ee3643;
 }
 /*--------------------------------------попапы-----------------------------------*/
 .map{
