@@ -244,6 +244,10 @@ a.zakaz:focus{
 	margin-left: 70px;
 	padding-top: 47px;
 }
+.user-menu-catalog{
+	flex-direction: column;
+	justify-content: flex-start;
+}
 .enter{
 	box-sizing: border-box;
 	display: inline-block;
@@ -263,6 +267,60 @@ a.zakaz:focus{
 	 margin-right: 15px;
 	 margin-top: 1px;
  }
+ /*------------------------------------catalog.html------------------*/
+.enter-catalog{
+
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	width: 285px;
+	height: 45px;
+	background-color: #ffffff;
+	
+	color: #000000;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 400;
+	
+	padding-left: 10px;
+	padding-top: 11px; 
+}
+.enter-catalog svg{
+	 margin-top: 1px;
+	 margin-right: 8px;
+ }
+.user-name{
+	margin: 0px;
+	padding: 0px;
+}
+.cabinet{
+	
+	display: flex;
+	justify-content: space-around;
+	margin: 0px;
+	margin-top: 5px;
+}
+.cabinet a{
+	margin: 0px 11px;
+	
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #32425c;
+}
+.cabinet a,
+.cabinet a:focus,
+.cabinet a:hover{
+	text-decoration:underline;
+}
+.point{
+	margin: 5px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color:#32425c;
+}
+/*------------------------------------*/
 .registration{
 	display: block;
 	box-sizing: border-box;
@@ -335,7 +393,7 @@ ul.site-navigation {
   background: url(../img/new.png) no-repeat 0 0;
 }
 
-
+/*---------------------------------------------------------index.html------------------------------------*/
 .flex-item{
 	margin-top: 60px;
 	padding: 0;
@@ -798,7 +856,6 @@ ul.poplable{
 }
 
 
-
 /*--------------------------------------------Сервисы компания и контаты----------------------------------------------------------------*/
 .service{
 	background-color: #f4f8f9;
@@ -1044,7 +1101,353 @@ a.writeus{
 	
 	padding: 10px;
 }
+/*--------------------------------------------------------catalog.html-----------------------------------*/
+.bread{
+	display: flex;
+	justify-content: flex-start;
+}
+.bread a{
+	margin-top: 3px;
+	font-family: "PTSans";
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+}
+.bread svg{
+	margin: 5px 10px;
+}
+.name-page{
+	width: 960px;
+	background-color:#f3f6f8;
+	box-sizing: border-box;
+}
+.name-page p{
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #32425c;
+	margin-left: 30px;
+}
+.items{
+	height: 1200px;
+	width: 960px;
+	margin-bottom: 150px;
+	
+	
+}
+.cols-filtr{
+	margin-top: 20px;
+	margin-right: 20px;
+	height: 750px;
+	width: 220px;
+	display: flex;
+	flex-direction: column;
+}
+.filtr{
+	border-bottom: 1px solid #e5e5e5;
+}
+.cols-filtr p{
+	margin: 0px;
+	box-sizing: border-box;
+	background-color: #f7f3ec;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	border-radius: 5px;
+	
+	font-family: "PTSans";
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+}
+.cols-filtr h2{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: "PTSans";
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+.range{
+	padding: 20px 30px;
+	background-color: #f7f3ec;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.output{
+	box-sizing: border-box;
+	width: 100px;
+	background-color: #f7f3ec;
+	border: none;
+	border-radius: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	
+	font-family: "PTSans";
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #000000;
+	text-align: center;
+}
+.lable-checkbox li{
+	position: relative;
+	cursor: pointer;
+	font-family: "PTSans";
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #000000;
+  
+ }
+ .lable-checkbox li:nth-last-child(1){
+	 margin-bottom: 20px;
+ }
+ .lable-checkbox path:hover{
+	 fill:#b5b5b5;
+ }
+ .lable{
+	 border-bottom: 1px solid #e5e5e5;
+ }
+ .pit{
+	 margin-bottom: 55px;
+ }
+ .cols-filtr a{
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	width: 140px;
+	height: 40px;
+	
+	font-family: "PTSans";
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 12px;
+ }
+ .sort{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	
+	width: 720px;
+	height: 40px;
+	background-color: #f7f3ec;
+	border-radius: 5px;
+	
+	font-family: "PTSans";
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+	
+ }
+.sort p{
+	margin: 0;
+	padding: 0;
+	margin-left: 20px;
+ }
+.sort a{
+	margin: 0px 15px;
+	color: #c5c5c5;
+	text-decoration: none;
+	border-bottom: 1px dashed #ee3643;
+ }
+ .sort a:hover{
+	color: #000000;
+	text-decoration: underline #ee3643;
+	border-bottom: none; 
+ }
+.sort a:focus{
+	color: #ee3643;
+	text-decoration: none;
+	border-bottom: none;
+}
+ a.arrow {
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 0;
+	text-decoration: none;
+	border-bottom: none;
+}
 
+.arrow::before {
+	display: inline-block;
+	border: 12px solid #c5c5c5;
+	border-right-width: 6px;
+	border-right-color: transparent;
+	border-left-width: 6px;
+	border-left-color: transparent;
+	content: "";
+}
+
+.arrow-up::before {
+	border-top-width: 0;
+}
+.arrow-down::before {
+	border-bottom-width: 0;
+}
+.arrow:hover::before {
+	display: inline-block;
+	border: 12px solid #000000;
+	border-right-width: 6px;
+	border-right-color: transparent;
+	border-left-width: 6px;
+	border-left-color: transparent;
+	content: "";
+}
+
+.arrow-up:hover::before {
+	border-top-width: 0;
+}
+.arrow-down:hover::before {
+	border-bottom-width: 0;
+}
+
+.arrow:focus::before {
+	display: inline-block;
+	border: 12px solid #ee3643;
+	border-right-width: 6px;
+	border-right-color: transparent;
+	border-left-width: 6px;
+	border-left-color: transparent;
+	content: "";
+}
+
+.arrow-up:focus::before {
+	border-top-width: 0;
+}
+.arrow-down:focus::before {
+	border-bottom-width: 0;
+}
+.catalog-items {
+	position: relative;
+	top: -675px;
+	left: 228px;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 720px;
+}
+.catalog-item:nth-last-child(3n){
+	margin-left: 0px;
+}
+.catalog-item {
+  position: relative;
+  display: inline-block;
+  width: 218px;
+  margin-bottom: 20px;
+  
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  
+  border: 1px solid #ccc;
+}
+.catalog-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.catalog-item .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+.catalog-item .actions {
+  display: none;
+}
+
+.catalog-item:hover .actions {
+  display: block;
+}
+.item-new:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 158px;
+  z-index: 10;
+
+  width: 60px;
+  height: 600px;
+
+  background: url(../img/new.png) no-repeat 0 0;
+}
+
+
+.page-numb{
+	position: relative;
+	right: 215px;
+	margin: 50px;
+}
+.page-numb a{
+	border: 1px solid #e5e5e5;
+	padding: 10px 20px;
+	border-radius: 3px;
+}
+.page-numb a:hover{
+	border: 1px solid #bdc6ca;
+}
+.page-numb a:focus{
+	border: 1px solid #ee3643;
+}
+page-numb a:active{
+	border: 1px solid #ee3643;
+	background-color: #ee3643;
+}
+.service h1{
+	width: 100%;
+	margin-top: 60px;
+}
+.service p{
+	width: 915px;
+	margin-bottom: 60px;
+}
+.perf{
+	height: auto;
+}
 /*--------------------------------------------------------ФУТЕР--------------------------------------------------*/
 .main-footer{
 	background-color: #32425c;
