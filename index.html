@@ -328,7 +328,7 @@
         <div class="popup-contact">
           <h1>КОНТАКТЫ</h1>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="#"><img src="img/map.png" alt="Место нахождения компании:г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <a href="#" class="button-map"><img src="img/map.png" alt="Место нахождения компании:г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
           <a href="#" class="writeus">Заблудились? НапиШИТЕ НАМ!"</a>
         </div>
@@ -416,14 +416,14 @@
   </footer>
   
   <!------------------попап карта--------------------------------------------------------------------->
- <div class="visually-hidden map">
+ <div class="map">
    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1584135299058!5m2!1sru!2sru" width="940" height="450" frameborder="0" style="border:1;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
    <button class="button">
        <span class="visually-hidden">закрыть </span>
    </button>
  </div>
   <!------------------попап  НапиШИТЕ НАМ--------------------------------------------------------------------->
- <div class="visually-hidden modalform">
+ <div class="modalform">
    <form action="https://echo.htmlacademy.ru" method="post" class="mailform" id="writeus">
        <p>
        <label for="name" class="flextext">Ваше имя:</label>
@@ -442,5 +442,91 @@
    <div class="sent"><input type="submit" value="ОТПРАВИТЬ" class="subbutton" form="writeus"></div>
    <button class="modalform-close" type="button"> <span class="visually-hidden">закрыть </span></button>
  </div>
+
+    <script>
+        var link = document.querySelector(".writeus");
+        var popup = document.querySelector(".modalform");
+        var close = popup.querySelector(".modalform-close");
+        
+        var form = popup.querySelector("form");
+        var login = popup.querySelector("[name=name]");
+        var email = popup.querySelector("[name=email]");
+        
+        var isStorageSupport = true;
+        var storage = "";
+        
+        try {
+          storage = localStorage.getItem("login");
+        } catch (err) {
+          isStorageSupport = false;
+        }
+       
+        link.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.add("modalform-show");
+            if (storage) {
+            login.value = storage;
+            email.focus();
+            } else {
+            login.focus();
+            }
+        });
+
+        close.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.remove("modalform-show");
+            popup.classList.remove("modalform-error");
+        });
+
+        form.addEventListener("submit", function (evt) {
+            evt.preventDefault();
+                          });
+            form.addEventListener("submit", function (evt) {
+            if (!login.value || !email.value) {
+            evt.preventDefault();
+            popup.classList.remove("modalform-error");
+            popup.offsetWidth = popup.offsetWidth;
+            popup.classList.add("modalform-error");
+            } else {
+            if (isStorageSupport) {
+            localStorage.setItem("login", login.value);
+            }
+            }
+        });
+
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+            evt.preventDefault();
+            if (popup.classList.contains("modalform-show")) {
+            popup.classList.remove("modalform-show");
+            popup.classList.remove("modalform-error");
+            }
+        }
+        });
+        
+        var mapLink = document.querySelector(".button-map");
+
+         var mapPopup = document.querySelector(".map");
+         var mapClose = mapPopup.querySelector(".button");
+         
+         mapLink.addEventListener("click", function (evt) {
+           evt.preventDefault();
+           mapPopup.classList.add("modalform-show");
+         });
+
+         mapClose.addEventListener("click", function (evt) {
+           evt.preventDefault();
+           mapPopup.classList.remove("modalform-show");
+         });
+
+         window.addEventListener("keydown", function (evt) {
+           if (evt.keyCode === 27) {
+             if (mapPopup.classList.contains("modalform-show")) {
+               evt.preventDefault();
+               mapPopup.classList.remove("modalform-show");
+             }
+           }
+         });
+    </script>
 </body>
 </html>

@@ -1591,9 +1591,10 @@ li.icons:focus{
 }
 /*--------------------------------------попапы-----------------------------------*/
 .map{
+	display: none;
 	position: fixed;
-	top:50%;
-	left:50%;
+	top:60%;
+	left:30%;
 	margin-top: -450px;
 	margin-left: -225px;
 }
@@ -1625,6 +1626,7 @@ li.icons:focus{
 }
 /*----------------------форма обратной связи--------------------------------*/
 .modalform {
+  display: none;	
   position: fixed;
   background-color: #ffffff;
   top: 120px;
@@ -1633,8 +1635,54 @@ li.icons:focus{
   width: 620px;
   margin-left: -320px;
   border-top: 7px solid #ff5357;
+  z-index: 11;
   
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+.modalform-show{
+	display: block;
+	animation: bounce 0.6s;
+}
+.modalform-error {
+  animation: shake 0.6s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 /*---------------------форматирование окон ввода---------------------*/
 .mailform{
@@ -1706,6 +1754,51 @@ textarea{
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
+}
+.lable-form{
+	display: flex;
+	width: 420px;
+	height: 70px;
+	margin-top: 50px;
+	margin-left: 80px;
+}
+.lable-form h1{
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	margin-left: 30px;
+	
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	
+}
+.btns{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	background-color: #f4f4f4;
+}
+.btns a{
+	box-sizing: border-box;
+	width: 220px;
+	height: 40px;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 12px;
+	margin: 40px 20px;
+	
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+}
+.btnzak{
+	background-color:  #ee3643;
+	color: #ffffff;
+}
+.btnbuy{
+	background-color:  #ffffff;
+	color: #000000;
 }
 /*---------------------закрытие окна--------------------*/
 .modalform-close{
